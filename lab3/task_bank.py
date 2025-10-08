@@ -29,12 +29,29 @@ class ClientNotFoundError(Exception):
     pass
 
 class Client:
-    def __init__(self, client.id, name):
+    def __init__(self, client_id, name):
         self.client_id = client_id
-        self.name = names
+        self.name = name
         self.client = {}
 
+    def add_account(selfself, account_id)
+        if account.currency in self.accounts
+            raise AccountAlreadyExistsError(f"счет в валюте {account.currency} уже существует")
+        self.accounts[account.currency] = account_id
 
+    def remove_account(self, currency):
+        if currency not in self.accounts:
+            raise AccoundNotFound(f"счет в валюте {currency} не найден")
+        def self.accounts[currency]
 
+    def get_account(self,currency):
+        if currency not in self.accounts:
+            raise AccoundNotFound(f"счет в валюте {currency} не найден")
+        self.accounts[currency] = currency
+
+    def get all_accounts(self):
+        return list(self.accounts.values())
+
+def get all_account
 
 
